@@ -1,7 +1,21 @@
-<h1>JOBSHOP</h1>
-<h2>WHAT HAPPENS AT WORK...</h2>
-<h3>is all right here. </h3>
-<p>We are on a mission to bring transparency to the workplace and jobs, so you know what it’s really like to be in a profession. Come join us and see what’s out there. </p>
+<% if user_signed_in? %>
+	<h1> Welcome </h1>
+<% else %>
+
+
+	<div class="homesection1">
+		<h1>WHAT HAPPENS AT WORK...</h1>
+
+		<h2>is all right here. </h2>
+
+		<p>We are on a mission to bring transparency to the workplace and jobs, so you know what it’s really like to be in a profession. Come join us and see what’s out there. </p>
+
+		<p> 
+				<%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+
+	</div>
 
 
 
+<% end %>
