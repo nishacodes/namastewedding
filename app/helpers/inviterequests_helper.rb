@@ -1,0 +1,2 @@
+module InviterequestsHelper
+end

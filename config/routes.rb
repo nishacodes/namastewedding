@@ -1,4 +1,7 @@
 Jobshop::Application.routes.draw do
+  resources :inviterequests
+
+
   devise_for :views
 
   devise_for :users
