@@ -1,13 +1,20 @@
 Jobshop::Application.routes.draw do
+  root :to => 'pages#home'
+  get 'about' => 'pages#about'
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :inviterequests
 
 
   devise_for :views
+  ActiveAdmin.routes(self)
 
   devise_for :users
+  ActiveAdmin.routes(self)
 
-  root :to => 'pages#home'
-  get 'about' => 'pages#about'
+  
 
 
   # The priority is based upon order of creation:
