@@ -61,5 +61,9 @@ module Jobshop
 
     # Required for Devise on Heroku
     config.assets.initialize_on_precompile = false
+
+    config.assets.paths << Rails.root.join("app", "assets", "flash")
+
+    
   end
 end

@@ -1,8 +1,18 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 
+/******** LAYOUTS & SCAFFOLDING *******/ 
+
 body {
 	padding: 60px 50px 50px 50px;
+	font-family: 'Gotham SSm A','Gotham SSm B',sans-serif;
+	overflow: hidden;
+	background: url(../images/office.jpg);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .footer {
@@ -12,3 +22,78 @@ body {
 		color: gray;
 	}
 }
+
+.navbar-inner {
+  min-height: 40px;
+  padding-left: 100px;
+  padding-right: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: none;
+  border: none;
+  
+}
+
+/* THIS SELECTS THE ENTIRE CONTAINER OF CONTENT (INCL NAVBAR), WHICH HAS EQUAL MARGIN ON BOTH SIDES */
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1000px;
+}
+
+.landingpage {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	margin-top: 40px;
+}
+
+.invitebox {
+	width: 360px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/******** ELEMENT STYLES ******/
+#logo {
+	color: white;
+	background-color: none;
+	letter-spacing: 3px;
+	font-family: 'Gill Sans MT','Gotham B',sans-serif;
+	text-shadow: none;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 40pt;
+	font-family: 'Gotham A','Gotham B',sans-serif;
+	letter-spacing: 4pt;
+
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 25pt;
+	font-family: 'Gotham A','Gotham B',sans-serif;
+	line-height: 50px;
+	letter-spacing: 2pt;
+	font-weight: 100;
+}
+
+p.white {
+	font-family: 'Chronicle SSm A','Chronicle SSm B',Georgia,serif;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	line-height: 120%;
+	font-style: italic;
+}
+
+/******** HOVER EFFECTS ********/ 
+
+

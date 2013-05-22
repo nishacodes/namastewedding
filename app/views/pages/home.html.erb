@@ -3,19 +3,18 @@
 <% else %>
 
 
-	<div class="homesection1">
-		<h1>WHAT HAPPENS AT WORK...</h1>
+	<div class="landingpage">
+		<h1>WHAT HAPPENS AT WORK</h1>
 
-		<h2>is all right here. </h2>
+		<h2>IS ALL RIGHT HERE. </h2>
 
-		<p>We are on a mission to bring transparency to the workplace and jobs, so you know what it’s really like to be in a profession. Come join us and see what’s out there. </p>
+		<div class="invitebox">
+			<p class="white">We are on a mission to bring transparency to what people really do in their jobs. <br><br> Join the revolution. </p>
 
-		<p> 
-				<%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-large" %>
-		</p>
-
+			<%= render 'inviterequests/form' %>
+		</div>
 	</div>
 
-
+	<!-- <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-large" %> -->
 
 <% end %>
