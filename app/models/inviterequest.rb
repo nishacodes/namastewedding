@@ -1,3 +1,3 @@
 class Inviterequest < ActiveRecord::Base
-  attr_accessible :email, :name
+  attr_accessible :email, :name, :institution
 end
