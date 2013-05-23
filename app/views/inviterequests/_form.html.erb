@@ -1,4 +1,4 @@
-<%= form_for(@inviterequest) do |f| %>
+<%= simple_form_for(@inviterequest, html: { class: 'form-horizontal'}) do |f| %>
   <% if @inviterequest.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@inviterequest.errors.count, "error") %> prohibited this inviterequest from being saved:</h2>
@@ -11,15 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="inviteform">
+    
+    <div class="field">
+      <%= f.input :name, :placeholder => 'Your name, please', label: false  %>
+      <%= f.input :name, :placeholder => 'Company or university', label: false  %>
+      <%= f.input :email, :placeholder => 'Your email', label: false %>
+    </div>
+    
+    <div class="actions">
+      <%= f.submit "REQUEST AN INVITE", class: "btn btn-primary btn-special" %>
+    </div>
+
   </div>
 <% end %>

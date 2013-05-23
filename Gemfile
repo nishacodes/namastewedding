@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
+gem 'simple_form'
 
 group :production do
  	gem 'pg'

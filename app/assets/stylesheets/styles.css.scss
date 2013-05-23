@@ -50,11 +50,18 @@ body {
 	width: 360px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 25px;
 	background-color: rgba(255, 255, 255, 0.4);
 	padding: 30px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.inviteform {
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /******** ELEMENT STYLES ******/
@@ -94,6 +101,84 @@ p.white {
 	font-style: italic;
 }
 
+.field {
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+
+}
+
+.actions {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/******** SIMPLE FORM ********/
+
+.simple_form {
+	/* ALL FIELDS, INCL BUTTONS */
+	input {
+		font: 12px/18px 'Open Sans',sans-serif;
+		color: white;
+		padding: 4px 6px 2px 6px;
+		width: 300px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		-moz-user-select: none;
+		margin-left:-187px;
+	}
+	/* INPUT WHITE FIELDS */
+	input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+		font: 12px/18px 'Open Sans',sans-serif;
+		color: #b8b7ab;
+		padding: 4px 6px 2px 6px;
+		width: 300px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		-moz-user-select: none;
+		margin-left:-187px;
+		font-weight: 200;
+	}
+
+	.actions input {
+		margin-left: auto;
+		margin-right: auto;
+		width: 150px;
+	
+	}
+
+}
+/* PLACEHOLDER FONT */
+
+:input-placeholder { /* WebKit browsers */
+    color:    #b8b7ab;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #b8b7ab;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #b8b7ab;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #b8b7ab;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #b8b7ab;
+}
+
+INPUT.btn.btn-primary {
+	background-image: none;
+	background-color: #d2c426;
+	border-color: #d2c426;
+	color: white;
+}
+
+
+
 /******** HOVER EFFECTS ********/ 
 
+INPUT.btn.btn-primary:hover {
+	background-image: none;
+	background-color: #e4d52a;
+	border-color: #e4d52a;
+}
 
