@@ -58,11 +58,25 @@ body {
 	margin-top: 40px;
 }
 
+/******** DIVS *********/
+
 .invitebox { /* transparent white box for invite form */
 	width: 360px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 25px;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 30px 30px 10px 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.thankyoubox { /* transparent white box for thank you msg */
+	width: 360px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 165px;
 	background-color: rgba(255, 255, 255, 0.4);
 	padding: 30px 30px 10px 30px;
 	-webkit-border-radius: 5px;
@@ -76,7 +90,36 @@ body {
 	margin-left: auto;
 }
 
+.socialbuttons {
+	width: 160px;
+	height: 60px;
+
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.facebook, .twitter {
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	float: left;
+	cursor: pointer;
+	opacity: .8;
+}
+
+
+
+
+
 /******** ELEMENT STYLES ******/
+a:hover {
+	background: none;
+}
+
 #logo {
 	color: white;
 	background-color: none;
@@ -113,6 +156,15 @@ p.white {
 	font-style: italic;
 }
 
+p.smallcaps {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+
+
 .field { 
 	padding: 10px 0px 0px 0px;
 	margin: 0px;
@@ -125,8 +177,8 @@ p.white {
 	margin-right: auto;
 }
 
-.small {
-	font-family: 'Gill Sans MT','Gotham B',sans-serif;
+small {
+	font-family: 'Open Sans',sans-serif;
 	font-size: 9pt;
 	vertical-align: middle;
 	line-height: 1;
@@ -176,10 +228,9 @@ INPUT.btn.btn-primary:hover { /* Hover color for yellow button */
 	border-color: #ead126;
 }
 
-A#logo.brand:hover { /* Gets rid of black background */
-	background: none;
+
+.facebook:hover, .twitter:hover {
+	opacity: 1;
 }
-
-
 
 
