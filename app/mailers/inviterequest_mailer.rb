@@ -1,5 +1,5 @@
 class InviterequestMailer < ActionMailer::Base
-   default :from => "nishabatra27@gmail.com"
+   default :from => "Namaste Wedding"
   
   def registration_confirmation(inviterequest)
     @inviterequest = inviterequest
