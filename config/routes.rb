@@ -1,4 +1,10 @@
 Jobshop::Application.routes.draw do
+  resources :pins
+
+
+  resources :weddings
+
+
   root :to => 'pages#home'
   get 'about' => 'pages#about'
 
