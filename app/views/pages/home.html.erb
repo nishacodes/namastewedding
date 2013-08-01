@@ -1,8 +1,10 @@
 <% if user_signed_in? %>
-	<h1> Welcome </h1>
+	
+
+
 <% else %>
-
-
+	
+<div class="landingpagewrapper">
 	<div class="landingpage">
 		
 		<%= image_tag("logo.png") %>
@@ -17,7 +19,7 @@
 			<%= render 'inviterequests/form' %>
 		</div>
 	</div>
-
+</div>
 	<!-- <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-large" %> -->
 
 <% end %>
