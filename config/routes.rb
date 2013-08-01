@@ -1,4 +1,6 @@
 Jobshop::Application.routes.draw do
+  get "users/show"
+
   resources :pins
 
 
@@ -19,6 +21,8 @@ Jobshop::Application.routes.draw do
 
   devise_for :users
   ActiveAdmin.routes(self)
+
+  match 'users/:id' => 'users#show'
 
   
 
