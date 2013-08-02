@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130802044542) do
+ActiveRecord::Schema.define(:version => 20130802050355) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -104,6 +104,9 @@ ActiveRecord::Schema.define(:version => 20130802044542) do
     t.string   "weddingstate"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "user_id"
   end
+
+  add_index "weddings", ["user_id"], :name => "index_weddings_on_user_id"
 
 end
