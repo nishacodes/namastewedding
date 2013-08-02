@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130801154043) do
+ActiveRecord::Schema.define(:version => 20130802044542) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -96,11 +96,14 @@ ActiveRecord::Schema.define(:version => 20130801154043) do
   add_index "views", ["reset_password_token"], :name => "index_views_on_reset_password_token", :unique => true
 
   create_table "weddings", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "user_id"
+    t.string   "url"
+    t.string   "bridename"
+    t.string   "groomname"
+    t.date     "weddingdate"
+    t.string   "weddingcity"
+    t.string   "weddingstate"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
-
-  add_index "weddings", ["user_id"], :name => "index_weddings_on_user_id"
 
 end

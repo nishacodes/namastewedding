@@ -1,7 +1,13 @@
-<h2>Listing weddings</h2>
+<h1>Listing weddings</h1>
 
 <table>
   <tr>
+    <th>Url</th>
+    <th>Bridename</th>
+    <th>Groomname</th>
+    <th>Weddingdate</th>
+    <th>Weddingcity</th>
+    <th>Weddingstate</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +15,12 @@
 
 <% @weddings.each do |wedding| %>
   <tr>
+    <td><%= wedding.url %></td>
+    <td><%= wedding.bridename %></td>
+    <td><%= wedding.groomname %></td>
+    <td><%= wedding.weddingdate %></td>
+    <td><%= wedding.weddingcity %></td>
+    <td><%= wedding.weddingstate %></td>
     <td><%= link_to 'Show', wedding %></td>
     <td><%= link_to 'Edit', edit_wedding_path(wedding) %></td>
     <td><%= link_to 'Destroy', wedding, method: :delete, data: { confirm: 'Are you sure?' } %></td>

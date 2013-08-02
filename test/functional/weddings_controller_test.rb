@@ -18,7 +18,7 @@ class WeddingsControllerTest < ActionController::TestCase
 
   test "should create wedding" do
     assert_difference('Wedding.count') do
-      post :create, wedding: {  }
+      post :create, wedding: { bridename: @wedding.bridename, groomname: @wedding.groomname, url: @wedding.url, weddingcity: @wedding.weddingcity, weddingdate: @wedding.weddingdate, weddingstate: @wedding.weddingstate }
     end
 
     assert_redirected_to wedding_path(assigns(:wedding))
@@ -35,7 +35,7 @@ class WeddingsControllerTest < ActionController::TestCase
   end
 
   test "should update wedding" do
-    put :update, id: @wedding, wedding: {  }
+    put :update, id: @wedding, wedding: { bridename: @wedding.bridename, groomname: @wedding.groomname, url: @wedding.url, weddingcity: @wedding.weddingcity, weddingdate: @wedding.weddingdate, weddingstate: @wedding.weddingstate }
     assert_redirected_to wedding_path(assigns(:wedding))
   end
 

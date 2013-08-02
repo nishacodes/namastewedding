@@ -1,11 +1,11 @@
 Jobshop::Application.routes.draw do
-  get "users/show"
-
   resources :pins
 
 
   resources :weddings
 
+
+  get "users/show"
 
   root :to => 'pages#home'
   get 'about' => 'pages#about'
