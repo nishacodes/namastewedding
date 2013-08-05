@@ -1,3 +1,5 @@
 class Wedding < ActiveRecord::Base
-  attr_accessible :bridename, :groomname, :url, :weddingcity, :weddingdate, :weddingstate
+  attr_accessible :bridename, :groomname, :url, :weddingcity, :weddingdate, :weddingstate, :user_id
+
+  belongs_to :user
 end
