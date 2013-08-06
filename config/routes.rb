@@ -1,9 +1,8 @@
 Jobshop::Application.routes.draw do
   resources :pins
-
-
+  
   resources :weddings
-
+  # match ':bridename' => 'weddings#show'
 
   get "users/show"
 
@@ -23,6 +22,9 @@ Jobshop::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   match 'users/:id' => 'users#show'
+
+  # 
+
 
   
 
