@@ -1,0 +1,16 @@
+<%= simple_form_for(@wedding) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :url, label: "Your Personal Link" %>
+    <%= f.input :bridename, label: "The Bride's Name" %>
+    <%= f.input :groomname, label: "The Groom's Name" %>
+    <%= f.input :weddingdate, label: "Wedding Date" %>
+    <%= f.input :weddingcity, label: "Wedding City" %>
+    <%= f.input :weddingstate, label: "Wedding State" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

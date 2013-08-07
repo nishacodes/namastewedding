@@ -145,6 +145,14 @@ body {
 	opacity: .8;
 }
 
+.createwedding-container {
+  width: 100%;
+  background-color: white;
+  height: 500px;
+  margin-top: -80px;
+  padding: 50px;
+}
+
 
 .gallery-container {
   background-color: white;
@@ -155,9 +163,9 @@ body {
   color: white;
   border: solid;
   border-width: 10px;
-  -moz-box-shadow: 0 0 5px 5px #cacaca;
+  /* -moz-box-shadow: 0 0 5px 5px #cacaca;
   -webkit-box-shadow: 0 0 5px 5px #cacaca;
-  box-shadow: 0 0 5px 5px #cacaca;
+  box-shadow: 0 0 5px 5px #cacaca; */
 }
 
 .col-lg-12 {
