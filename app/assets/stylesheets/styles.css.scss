@@ -148,32 +148,40 @@ body {
 
 .gallery-container {
   background-color: white;
-  padding: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
   width: 80%;
-  height: 700px;
-
+  height: 865px;
+  color: white;
+  border: solid;
+  border-width: 10px;
+  -moz-box-shadow: 0 0 5px 5px #cacaca;
+  -webkit-box-shadow: 0 0 5px 5px #cacaca;
+  box-shadow: 0 0 5px 5px #cacaca;
 }
 
 .col-lg-12 {
-  background-color: gray;
+  background-color: #d8d8d8;
   height: 350px;
-  border-color: white;
+  color: white;
   border: solid;
+  border-width: 5px;
 }
 
 .col-lg-6 {
-  background-color: gray;
+  background-color: #d8d8d8;
   height: 250px;
-  border-color: white;
+  color: white;
   border: solid;
+  border-width: 5px;
 }
 
 .col-lg-4 {
-  background-color: gray;
+  background-color: #d8d8d8;
   height: 250px;
-  border-color: white;
+  color: white;
   border: solid;
-  
+  border-width: 5px;
 }
 
 /******** ELEMENT STYLES ******/
