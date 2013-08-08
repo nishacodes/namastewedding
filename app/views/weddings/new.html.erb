@@ -1,8 +1,8 @@
-<div class="createwedding-container">
 
-	<h1>New wedding</h1>
+	<div class="createwedding-container-inner verticalshadow">
+<div class="createwedding-container-outer">
+		<%= render "weddingdetails_step" %>
 
-	<%= render "weddingdetails_step" %>
-
-	<%= link_to 'Back', weddings_path %>
+		<%= link_to 'Back', weddings_path, class: "inline" %>
+	</div>
 </div>
