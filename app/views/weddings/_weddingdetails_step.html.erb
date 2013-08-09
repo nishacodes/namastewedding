@@ -26,7 +26,8 @@
 
 <h6> Your Wedding </h6>
     <div class="formrow center">
-      <%= f.input :weddingdate, label: "Wedding Date" %>
+      <%= f.text_field :weddingdate %>
+      <!-- <%= f.input :weddingdate, label: "Wedding Date" %> -->
       <%= f.input :weddingcity, label: "City" %>
       <%= f.input :weddingstate, label: "State" %>
     </div>
@@ -34,7 +35,8 @@
 <h6> Your Personal Link </h6>
     <div class="formrow center">
       <p class="inline"> www.namastewedding.com/</p> 
-      <%= f.input :url, placeholder: "i.e. 'arjunandnisha' ", label: false %>
+      <%= f.input :url, placeholder: "i.e. 'arjunandnisha' ", label: false %> 
+
     </div>
 
   <div class="form-actions center">
