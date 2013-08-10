@@ -1,0 +1,42 @@
+WEDDING DETAILS
+
+
+<!-- FORM AND LABELS -->
+
+<%= simple_form_for(@wedding, html: { class: 'form-horizontal'}) do |f| %>
+  <%= f.error_notification %>
+    <div class="form-inputs">
+<h6> Your Names </h6>  
+
+
+    <div class="formrow center">
+      <%= f.input :bridename, placeholder: "The Bride's Name", label: false %>
+      <h2 class="inline">  &</h2>
+      <%= f.input :groomname, placeholder: "The Groom's Name", label: false %>
+    </div>
+
+
+<h6> Your Wedding </h6>
+    <div class="formrow center">
+      <%= f.text_field :weddingdate %> 
+      <!-- OLD STYLE DATE FORMAT <%= f.input :weddingdate, label: "Wedding Date" %> -->
+      <%= f.input :weddingcity, label: "City" %>
+      <%= f.input :weddingstate, label: "State" %>
+    </div>
+
+
+<h6> Your Personal Link </h6>
+    <div class="formrow center">
+      <p class="inline"> www.namastewedding.com/</p> 
+      <%= f.input :url, placeholder: "i.e. 'arjunandnisha' ", label: false %> 
+    </div>
+
+  </div>
+
+
+  <div class="form-actions center">
+    <%= f.button :submit, value: "Next" %>
+  </div>
+
+
+<% end %>

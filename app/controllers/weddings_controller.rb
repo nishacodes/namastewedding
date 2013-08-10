@@ -1,5 +1,7 @@
 class WeddingsController < ApplicationController
 	before_filter :authenticate_user!, except: [:index]
+  include Wicked::Wizard
+  steps :weddingdetails, :eventdetails
 
   # GET /weddings
   # GET /weddings.json
@@ -42,14 +44,10 @@ class WeddingsController < ApplicationController
   # POST /weddings.json
   def create
     @wedding = current_user.weddings.new(params[:wedding])
-    if @wedding.save
-      redirect_to :controller => 'users', :action => 'index', :wedding_id => @wedding.id
-    else
-      render :action => 'new'
-    end
+ 
     respond_to do |format|
       if @wedding.save
-        format.html { redirect_to @wedding, notice: 'Your Wedding Page was successfully created.' }
+        format.html { redirect_to wedding_steps_path }
         format.json { render json: @wedding, status: :created, location: @wedding }
       else
         format.html { render action: "new" }

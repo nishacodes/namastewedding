@@ -21,5 +21,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-ui-rails'
   gem 'bootstrap-sass', '~> 2.3.1.0'
+  gem 'wicked'
 end
 
