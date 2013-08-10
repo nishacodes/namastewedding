@@ -44,10 +44,11 @@ class WeddingsController < ApplicationController
   # POST /weddings.json
   def create
     @wedding = current_user.weddings.new(params[:wedding])
- 
+    
+
     respond_to do |format|
       if @wedding.save
-        format.html { redirect_to wedding_steps_path }
+        format.html { redirect_to wedding_steps_path(:id => "weddingdetails", :wedding_id => @wedding.id) }
         format.json { render json: @wedding, status: :created, location: @wedding }
       else
         format.html { render action: "new" }

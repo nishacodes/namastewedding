@@ -3,9 +3,14 @@ class WeddingStepsController < ApplicationController
 	steps :weddingdetails, :eventdetails
 
 	def show
-		@wedding = :wedding_id
+		@wedding = Wedding.find(params[:wedding_id])
 		render_wizard
 	end
 
+	def update
+		@wedding = Wedding.find(params[:wedding_id])
+		@wedding.attributes = params[:wedding]
+		render_wizard(@wedding)
+	end
 	
 end
