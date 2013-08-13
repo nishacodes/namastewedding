@@ -3,7 +3,7 @@ Jobshop::Application.routes.draw do
   
   resources :weddings
   # match ':bridename' => 'weddings#show'
-  resources :wedding_steps
+  
   get "users/show"
 
   root :to => 'pages#home'
@@ -23,6 +23,8 @@ Jobshop::Application.routes.draw do
 
   match 'users/:id' => 'users#show'
 
+
+  resources :wedding_steps
   # 
 
 

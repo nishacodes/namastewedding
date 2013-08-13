@@ -1,6 +1,6 @@
 class WeddingStepsController < ApplicationController
 	include Wicked::Wizard
-	steps :weddingdetails, :eventdetails
+	steps :weddingdetails, :addphotos
 
 	def show
 		@wedding = Wedding.find(params[:wedding_id])
@@ -9,8 +9,9 @@ class WeddingStepsController < ApplicationController
 
 	def update
 		@wedding = Wedding.find(params[:wedding_id])
-		@wedding.attributes = params[:wedding]
-		render_wizard(@wedding)
+		@wedding.update_attributes(params[:wedding])
+		render_wizard @wedding
+		
 	end
 	
 end

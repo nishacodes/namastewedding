@@ -48,6 +48,7 @@ class WeddingsController < ApplicationController
 
     respond_to do |format|
       if @wedding.save
+        
         format.html { redirect_to wedding_steps_path(:id => "weddingdetails", :wedding_id => @wedding.id) }
         format.json { render json: @wedding, status: :created, location: @wedding }
       else
