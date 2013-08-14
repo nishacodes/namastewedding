@@ -6,7 +6,7 @@ gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'simple_form'
-gem 'rmagick'
+gem 'mini_magick'
 gem 'carrierwave'
 
 group :production do
