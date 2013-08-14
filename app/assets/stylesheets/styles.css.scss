@@ -120,6 +120,13 @@ body {
   box-shadow: 0 0 5px 5px #cacaca; 
 }
 
+.whitebg {
+  background-color: white;
+}
+
+.padded {
+  padding: 15px;
+}
 /******** DIVS *********/
 
 .invitebox { /* transparent white box for invite form */
@@ -240,6 +247,13 @@ body {
   border-width: 5px;
 }
 
+/* PHOTO UPLOAD AND GALLERY */
+
+
+
+.thumbnail { /* bootstrap selector */
+  height: 60px;
+}
 
 /******** TEXT ELEMENT STYLES ******/
 

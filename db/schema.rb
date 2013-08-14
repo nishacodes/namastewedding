@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130813211517) do
+ActiveRecord::Schema.define(:version => 20130813233452) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20130813211517) do
     t.datetime "updated_at", :null => false
     t.integer  "wedding_id"
     t.integer  "user_id"
+    t.string   "image"
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"

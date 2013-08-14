@@ -1,7 +1,8 @@
 class Pin < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :user_id, :wedding_id, :image
 
   belongs_to :user
-  belongs_to_through :wedding
   validates :user_id, presence: true
+  mount_uploader :image, ImageUploader
+
 end
