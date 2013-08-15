@@ -24,5 +24,6 @@ group :assets do
   gem 'jquery-ui-rails'
   gem 'bootstrap-sass', '~> 2.3.1.0'
   gem 'wicked'
+  gem 'jquery-fileupload-rails'
 end
 

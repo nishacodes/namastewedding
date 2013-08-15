@@ -1,12 +1,8 @@
 <h1>Listing pins</h1>
+<%= render @pins %>
 
+<!-- ALREADY IN PIN PARTIAL
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @pins.each do |pin| %>
   <tr>
     <td><%= link_to 'Show', pin %></td>
@@ -15,7 +11,13 @@
   </tr>
 <% end %>
 </table>
-
 <br />
 
-<%= link_to 'New Pin', new_pin_path %>
+-->
+
+<!-- FOR SINGLE IMAGE UPLOAD <%= link_to 'New Pin', new_pin_path %> -->
+
+<%= form_for Pin.new do |f| %>
+  <%= f.label :image, "Upload photos:" %>
+  <%= f.file_field :image, multiple: true, name: "pin[image]" %>
+<% end %>
