@@ -5,4 +5,5 @@ class Pin < ActiveRecord::Base
   validates :user_id, presence: true
   mount_uploader :image, ImageUploader
 
+  
 end

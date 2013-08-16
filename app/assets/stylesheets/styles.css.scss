@@ -255,6 +255,21 @@ body {
   height: 60px;
 }
 
+/* Required for jQuery Masonry */
+
+.box {
+    margin: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    float: left;
+    width: 214px;
+}
+
+.box img {
+    width: 100%;
+
+}
+
 /******** TEXT ELEMENT STYLES ******/
 
 

@@ -4,3 +4,6 @@
 jQuery ->
 	$('#new_pin').fileupload()
 		dataType: "script"
+
+	$('#pins').imagesLoaded ->
+		$('#pins').masonry itemSelector: ".box"

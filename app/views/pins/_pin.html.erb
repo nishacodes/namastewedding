@@ -1,8 +1,10 @@
-<div class="pin">
+<div class="box">
   <%= link_to image_tag(pin.image_url(:thumb)), pin if pin.image? %>
   
-  <div class="actions">
+<!--  <div class="actions">
     <%= link_to "edit", edit_pin_path(pin) %> |
     <%= link_to "remove", pin, :confirm => 'Are you sure?', :method => :delete %>
-  </div>
+ 	 </div>
+-->
+
 </div>
