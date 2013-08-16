@@ -1,8 +1,7 @@
 Jobshop::Application.routes.draw do
   resources :pins
-  
   resources :weddings
-  # match ':bridename' => 'weddings#show'
+  resources :wedding_steps  
   
   get "users/show"
 
@@ -23,9 +22,6 @@ Jobshop::Application.routes.draw do
 
   match 'users/:id' => 'users#show'
 
-
-  resources :wedding_steps
-  # 
 
 
   

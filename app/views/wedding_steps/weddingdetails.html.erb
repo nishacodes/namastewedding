@@ -3,7 +3,7 @@ WEDDING DETAILS
 
 <!-- FORM AND LABELS -->
 
-<%= simple_form_for(@wedding, :url => wizard_path(@wedding.id), :method => :put, html: { class: 'form-horizontal'}) do |f| %>
+<%= simple_form_for(@wedding, :url => wizard_path(wedding_id: @wedding.id), :method => :put, html: { class: 'form-horizontal'}) do |f| %>
   <%= f.error_notification %>
     <div class="form-inputs">
 <div><h6> Your Names </h6>  </div>
@@ -42,4 +42,4 @@ WEDDING DETAILS
 
 <% end %>
 
-<%= link_to 'skip', next_wizard_path %>
+<%= link_to 'skip', next_wizard_path(wedding_id: @wedding.id) %>
