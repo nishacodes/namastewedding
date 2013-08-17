@@ -1,11 +1,13 @@
 Jobshop::Application.routes.draw do
   resources :pins
   resources :weddings
-  resources :wedding_steps  
+    scope "weddings/:wedding_id" do
+      resources :wedding_steps
+    end 
   
   get "users/show"
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
   get 'about' => 'pages#about'
 
   devise_for :admin_users, ActiveAdmin::Devise.config

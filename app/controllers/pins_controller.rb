@@ -5,6 +5,8 @@ class PinsController < ApplicationController
   # GET /pins.json
   def index
     @pins = Pin.order("created_at desc")
+    @iconbar = true
+    @herospace = true
 
     respond_to do |format|
       format.html # index.html.erb
