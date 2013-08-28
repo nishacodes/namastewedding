@@ -16,21 +16,34 @@
 </head>
 <body>
 
+  <% if user_signed_in? %>
+    <%= render 'layouts/header' %>
+    <%= render 'layouts/herospace' %>
+    <%= render 'layouts/iconbar' %>
+    
+    <div class="container"> 
+        <% flash.each do |name, msg| %>
+            <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+        <% end %>
+        
+        <%= yield %>
+    </div>
+    
+    <%= render 'layouts/footer' %>
 
-	<%= render 'layouts/header' %>
-  <%= render 'layouts/herospace' %>
-  <%= render 'layouts/iconbar' %>
-	
-	<div class="container"> 
-      <% flash.each do |name, msg| %>
-       		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-  		<% end %>
-      
-      <%= yield %>
-	</div>
-  
-  <%= render 'layouts/footer' %>
- 
+
+  <% else %>
+	  <%= render 'layouts/header' %>
+
+     
+        <% flash.each do |name, msg| %>
+            <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+        <% end %>
+        
+        <%= yield %>
+    
+    <%= render 'layouts/footer' %>
+  <% end %>
 
 </body>
 </html>

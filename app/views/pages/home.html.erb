@@ -1,0 +1,58 @@
+<% if user_signed_in? %>
+	
+
+
+<% else %>
+
+	<div class="landingsection1">
+
+		<div class="invitebox">
+			<br> <br> <br> <h5> INDIAN WEDDING <BR> PLANNING JUST GOT EASIER </h5>	
+			
+			<%= image_tag("smalldivider.png") %>
+
+			<h5> REQUEST AN INVITE </h5>	
+
+			<%= render 'inviterequests/form' %>
+		</div>
+	</div>
+
+	<div class="landingsection2">
+		<div class="container">
+		</div>
+	</div>
+
+
+	<div class="landingsection3">
+		<div class="container">
+		</div>
+	</div>
+
+
+	<div class="landingsection4">
+		<div class="container">
+		</div>
+	</div>
+
+	<div class="landingsection5">
+		<div class="container">
+		</div>
+	</div>
+
+
+	<div class="landingsection6">
+		<div class="container">
+		</div>
+	</div>
+
+
+	<div class="landingsection7">
+		<div class="container">
+		</div>
+	</div>
+
+	
+
+	<!-- <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-large" %> -->
+
+<% end %>

@@ -37,7 +37,6 @@ body {
   min-height: 60px;
   padding-left: 100px;
   padding-right: 40px;
-  background-color: rgba(255, 255, 255, 1);
   background-image: none;
   border: none;
   padding-top: 15px;
@@ -48,7 +47,6 @@ body {
   width: 1170px;
   text-align: center;
   height: 55px;
-  background-color: white;
   margin-right: auto;
   margin-left: auto;
   vertical-align: middle;
@@ -75,20 +73,14 @@ body {
     width: 1000px;
     height: 100%;
     color: none;
-    background-color: #f9f9f7;
+    margin-top: 30px;
+    
+
 
 }
 
-.landingpagewrapper {
- 	background: url(../images/bells.png);
-	background-repeat:no-repeat;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	height: 100%;
-  	width: 100%;
- }
+/* LANDING PAGE SECTIONS */
+
 
 .landingpage { /* div for all landing page content */
 	width: 900px;
@@ -98,8 +90,58 @@ body {
 	height: 100%;
 	padding: 0px;
 	margin-bottom: 0px;
+}
+
+.landingsection1 {
+  width: 100%;
+  height: 530px;
+  background: url(../images/bells.png);
+  background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+.invitebox { /* transparent white box for invite form */
+  width: 400px;
+  height: 340px;
+  padding: 0px;
+  margin-top: 190px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;  
+  background: url(../images/arch.png);
+    background-repeat:no-repeat;
+  border-color: white;
+  border-width: 10px;
+  
+}
+
+
+.invitebox-inner { /* div for invite form within .invitebox */
+  width: 250px;
+  margin-right: 75px;
+  margin-left: 75px;
 
 }
+
+.landingsection2, .landingsection4, .landingsection6{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
+.landingsection3, .landingsection5, .landingsection7 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+
+}
+
+
+
+
 
 /******** GENERIC *********/
 
@@ -141,6 +183,10 @@ body {
   background-color: white;
 }
 
+.nobg {
+  background-color: none;
+}
+
 .padded {
   padding: 15px;
 }
@@ -153,31 +199,15 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.transparent {
+  opacity: 0.8;
+}
+
+
 /******** DIVS *********/
 
-.invitebox { /* transparent white box for invite form */
-	width: 400px;
-	height: 340px;
-	padding: 0px;
-	position: absolute;
-	margin-right: 250px;
-	margin-left: 250px;
-	bottom: 0px;
-	background: url(../images/arch.png);
-		background-repeat:no-repeat;
-	border-color: white;
-	border-width: 10px;
-	
-}
 
-
-.invitebox-inner { /* div for invite form within .invitebox */
-	
-	width: 250px;
-	margin-right: 75px;
-	margin-left: 75px;
-	
-}
 
 .socialbuttons {
 	
@@ -306,11 +336,11 @@ a#logo {
 	text-decoration: none;
 	letter-spacing: 2px;
   font-weight: 100;
-  transform : scale(1,1.1);
-  -webkit-transform:scale(1,1.1); /* Safari and Chrome */
-  -moz-transform:scale(1,1.1); /* Firefox */
-  -ms-transform:scale(1,1.1); /* IE 9+ */
-  -o-transform:scale(1,1.1); /* Opera */
+  transform : scale(1.1,1.2);
+  -webkit-transform:scale(1.1,1.2); /* Safari and Chrome */
+  -moz-transform:scale(1.1,1.2); /* Firefox */
+  -ms-transform:scale(1.1,1.2); /* IE 9+ */
+  -o-transform:scale(1.1,1.2); /* Opera */
 }	
 
 #logo {
