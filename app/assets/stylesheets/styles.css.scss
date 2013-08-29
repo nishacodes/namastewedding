@@ -32,7 +32,9 @@ body {
 		font-weight: 600;
 	}
 }
-
+.navbar {
+  background-color: none;
+}
 .navbar-inner {
   min-height: 60px;
   padding-left: 100px;
@@ -40,6 +42,7 @@ body {
   background-image: none;
   border: none;
   padding-top: 15px;
+  background-color: none;
 }
 
 #navbarwrapper {
@@ -50,6 +53,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   vertical-align: middle;
+  background-color: none;
 }
 #herospace {
   background-color: white;
@@ -95,7 +99,7 @@ body {
 .landingsection1 {
   width: 100%;
   height: 530px;
-  background: url(../images/bells.png);
+  background: url(../images/garlands.png);
   background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
