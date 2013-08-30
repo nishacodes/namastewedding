@@ -29,6 +29,7 @@ class InviterequestsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @inviterequest }
+      format.js
     end
   end
 
@@ -44,12 +45,13 @@ class InviterequestsController < ApplicationController
 
     respond_to do |format|
       if @inviterequest.save
+        format.js
         InviterequestMailer.registration_confirmation(@inviterequest).deliver
-        format.html { redirect_to @inviterequest} #, notice: 'Inviterequest was successfully created.' }
-        format.json { render json: @inviterequest, status: :created, location: @inviterequest }
+        
       else
         format.html { render action: "new" }
         format.json { render json: @inviterequest.errors, status: :unprocessable_entity}
+        format.js
       end
     end
   end
