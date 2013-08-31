@@ -1,6 +1,6 @@
 class WeddingStepsController < ApplicationController
 	include Wicked::Wizard
-	steps :weddingdetails, :addphotos
+	steps :eventdetails, :addphotos, :addvendors
 
 	def show
 		@wedding = Wedding.find(params[:wedding_id])
@@ -13,4 +13,10 @@ class WeddingStepsController < ApplicationController
 		render_wizard @wedding
 	end
 	
+# private	
+
+  # def redirect_to_finish_wizard(options = nil)
+   # redirect_to root_path , notice: "Thank you for signing up." #wedding path is not working
+  # end
+
 end

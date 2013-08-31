@@ -1,2 +1,38 @@
-EVENT DETAILS
+<div class="createwedding-container-outer verticalshadow"> <!-- WHITE BOX -->
+  <div class="createwedding-container-inner"> <!-- CONTENT WRAPPER -->
 
+    
+	<!-- PROGRESS BAR -->
+	<div class="weddingpg-progressbar center"> 
+	  <ul class="nav nav-pills nav-justified">
+	    <li><a href="#">1. WEDDING DETAILS</a></li>
+	    <li class="active"><a href="#">2. EVENT DETAILS</a></li>
+	    <li><a href="#">3. ADD PHOTOS</a></li>
+	    <li><a href="#">4. ADD VENDORS</a></li>
+	  </ul>
+	</div>
+	<br>
+
+
+
+    <!-- FORM AND LABELS -->
+
+    <%= simple_form_for(@wedding, :url => wizard_path(step, wedding_id: @wedding.id), :method => :put, html: { class: 'form-horizontal'}) do |f| %>
+      <%= f.error_notification %>
+        <div class="form-inputs">
+    <div><h6> event details</h6>  </div>
+
+
+        
+      <div class="form-actions center">
+        <%= f.button :submit, value: "Next" %>
+      </div>
+
+
+
+    <% end %>
+
+    <%= link_to 'skip', next_wizard_path(wedding_id: @wedding.id) %>
+
+  </div>
+</div>

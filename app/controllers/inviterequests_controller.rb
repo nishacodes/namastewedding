@@ -47,7 +47,6 @@ class InviterequestsController < ApplicationController
       if @inviterequest.save
         format.js
         InviterequestMailer.registration_confirmation(@inviterequest).deliver
-        
       else
         format.html { render action: "new" }
         format.json { render json: @inviterequest.errors, status: :unprocessable_entity}

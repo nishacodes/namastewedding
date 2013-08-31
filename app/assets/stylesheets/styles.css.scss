@@ -236,11 +236,12 @@ body {
 	opacity: .8;
 }
 
-.createwedding-container-outer {
+.createwedding-container-inner {
+  overflow: auto;
 
 }
 
-.createwedding-container-inner {
+.createwedding-container-outer {
   width: 100%;
   background-color: white;
   min-height: 600px;
@@ -255,7 +256,7 @@ body {
 }
 
 .weddingpg-progressbar {
-  width: 550px;
+  width: 720px;
   height: 40px;
   padding: 0px;
 }
