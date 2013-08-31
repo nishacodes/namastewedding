@@ -5,10 +5,10 @@
 	<!-- PROGRESS BAR -->
 	<div class="weddingpg-progressbar center"> 
 	  <ul class="nav nav-pills nav-justified">
-	    <li><a href="#">1. WEDDING DETAILS</a></li>
-	    <li><a href="#">2. EVENT DETAILS</a></li>
-	    <li class="active"><a href="#">3. ADD PHOTOS</a></li>
-	    <li><a href="#">4. ADD VENDORS</a></li>
+	     <li> <%=link_to  "1. WEDDING DETAILS",  new_wedding_path %></li>
+	     <li><%=link_to  "2. EVENT DETAILS ", wizard_path(:eventdetails) %></li>
+	     <li class="active"> <%=link_to  "3. ADD PHOTOS", wizard_path(:addphotos) %></li>
+       <li><%=link_to  "4. ADD VENDORS", wizard_path(:addvendors) %></li>
 	  </ul>
 	</div>
 	<br>
