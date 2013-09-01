@@ -1,0 +1,5 @@
+<% if @pin.new_record? %>
+  alert("Failed to upload pin: <%= j @pin.errors.full_messages.join(', ').html_safe %>");
+<% else %>
+  $("#pins").append("<%= j render(@pin) %>");
+<% end %>

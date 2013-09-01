@@ -4,7 +4,10 @@ class WeddingStepsController < ApplicationController
 
 	def show
 		@wedding = Wedding.find(params[:wedding_id])
+		@pin = current_user.pins.new # added pins/new action
+		@pin = current_user.pins.create(params[:pin])  # added from pins/create action
 		render_wizard
+		
 	end
 
 	def update
@@ -15,8 +18,8 @@ class WeddingStepsController < ApplicationController
 	
 # private	
 
-  # def redirect_to_finish_wizard(options = nil)
-   # redirect_to root_path , notice: "Thank you for signing up." #wedding path is not working
-  # end
+  #def redirect_to_finish_wizard(options = nil)
+  #  redirect_to root_path , notice: "Thank you for signing up." #wedding path is not working
+  #end
 
 end
