@@ -1,3 +1,5 @@
+<div class="createwedding-container-outer verticalshadow"> <!-- WHITE BOX -->
+    <div class="createwedding-container-inner"> <!-- CONTENT WRAPPER -->
 
 <!-- PROGRESS BAR -->
 <div class="weddingpg-progressbar center"> 
@@ -26,17 +28,19 @@
     </div>
 
 
-<h6> Your Wedding </h6>
+
     <div class="formrow center">
-      <%= f.text_field :weddingdate %> 
+      <h6>Your Wedding </h6>
+      <%= f.text_field :weddingdate, id: "datepicker" %> 
       <!-- OLD STYLE DATE FORMAT <%= f.input :weddingdate, label: "Wedding Date" %> -->
       <%= f.input :weddingcity, label: "City" %>
       <%= f.input :weddingstate, label: "State" %>
     </div>
 
 
-<h6> Your Personal Link </h6>
+
     <div class="formrow center">
+      <h6>Your Personal Link </h6>
       <p class="inline"> www.namastewedding.com/</p> 
       <%= f.input :url, placeholder: "i.e. 'arjunandnisha' ", label: false %> 
     </div>
@@ -50,3 +54,5 @@
 
 
 <% end %>
+  </div>
+</div>

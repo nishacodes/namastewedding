@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-fileupload/basic
 //= require jquery.ui.datepicker
+//= require jquery-fileupload/basic
 //= require masonry.pkgd.min.js
 //= require bootstrap
 //= require_tree .
