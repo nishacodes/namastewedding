@@ -1,7 +1,7 @@
 <%= simple_form_for(@inviterequest, remote:true, html: { class: 'form-horizontal'}) do |f| %>
   <% if @inviterequest.errors.any? %>
     <div id="error_explanation">
-      <h3><%= pluralize(@inviterequest.errors.count, "error") %> prohibited this inviterequest from being saved:</h3>
+      <h4><%= pluralize(@inviterequest.errors.count, "error") %> prohibited this inviterequest from being saved:</h4>
 
       <ul>
       <% @inviterequest.errors.full_messages.each do |msg| %>

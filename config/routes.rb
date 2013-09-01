@@ -23,6 +23,7 @@ Jobshop::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   match 'users/:id' => 'users#show'
+  
 
 
 

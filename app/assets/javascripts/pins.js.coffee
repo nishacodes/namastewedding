@@ -7,5 +7,9 @@ jQuery ->
 
 	$('#new_pin').fileupload()
 		dataType: "script"
+		
+	
+
+	
 
 	
