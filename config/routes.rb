@@ -7,7 +7,7 @@ Jobshop::Application.routes.draw do
   
   get "users/show"
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
   get 'about' => 'pages#about'
 
   devise_for :admin_users, ActiveAdmin::Devise.config

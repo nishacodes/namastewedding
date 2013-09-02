@@ -100,6 +100,8 @@ body {
   width: 100%;
   height: 530px;
   background: url(../images/garlands.png);
+  display: inline-block;
+  position: relative;
   background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -113,8 +115,9 @@ body {
   padding: 0px;
   margin-top: 190px;
   display: inline-block;
-  margin-right: auto;
-  margin-left: auto;  
+  position: relative;
+ 
+  margin-left: 35%;
   background: url(../images/arch.png);
     background-repeat:no-repeat;
   border-color: white;
@@ -133,7 +136,7 @@ body {
 .landingsection2, .landingsection4, .landingsection6{
   width: 100%;
   height: 300px;
-  background-color: black;
+  background-color: white;
 }
 
 .landingsection3, .landingsection5, .landingsection7 {

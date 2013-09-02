@@ -1,23 +1,38 @@
+<div class="createwedding-container-outer verticalshadow"> <!-- WHITE BOX -->
+  <div class="createwedding-container-inner"> <!-- CONTENT WRAPPER -->
 
-
-
+    <!-- PROGRESS BAR -->
+    <div class="weddingpg-progressbar center"> 
+      <ul class="nav nav-pills nav-justified">
+       <li> <%=link_to  "1. WEDDING DETAILS",  new_wedding_path %></li>
+      <li><%=link_to  "2. EVENT DETAILS ", wizard_path(:eventdetails) %></li>
+      <li class="active"> <%=link_to  "3. ADD PHOTOS", wizard_path(:addphotos) %></li>
+      <li><%=link_to  "4. ADD VENDORS", wizard_path(:addvendors) %></li>
+      </ul>
+    </div>
+    <br>
+    
+    
     <%= simple_form_for(@wedding, :url => wizard_path(step, wedding_id: @wedding.id), :method => :put, html: { class: 'form-horizontal'}) do |f| %>
       <%= f.error_notification %>
         <div class="form-inputs">
     
 
-    <div><h6> ADD PHOTOS</h6>  </div>
+           <div><h6> ADD PHOTOS</h6>  </div>
 
 
-        <%= render :file => "pins/new" %>
-    
-      <div class="form-actions center">
-        <%= f.button :submit, value: "Next" %>
-      </div>
+            <%= render :file => "pins/new" %>
+        
+          <div class="form-actions center">
+            <%= f.button :submit, value: "Next" %>
+          </div>
 
-
+        </div>
 
     <% end %>
+
+  </div>
+</div>
 
     <!-- WEDDING PREVIEW PAGE --> 
   	<%= render :file => "weddings/show" %>
