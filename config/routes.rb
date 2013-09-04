@@ -1,4 +1,7 @@
 Jobshop::Application.routes.draw do
+  resources :vendors
+
+
   resources :pins
   resources :weddings
     scope "weddings/:wedding_id" do
