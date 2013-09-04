@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130904012759) do
+ActiveRecord::Schema.define(:version => 20130904195510) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -128,6 +128,13 @@ ActiveRecord::Schema.define(:version => 20130904012759) do
     t.string   "day3_event1"
     t.string   "day3_event2"
     t.string   "day3_event3"
+    t.string   "venue_d1e1"
+    t.string   "venue_d1e2"
+    t.string   "venue_d2e1"
+    t.string   "venue_d2e2"
+    t.string   "venue_d3e1"
+    t.string   "venue_d3e2"
+    t.string   "venue_d3e3"
   end
 
   add_index "weddings", ["user_id"], :name => "index_weddings_on_user_id"

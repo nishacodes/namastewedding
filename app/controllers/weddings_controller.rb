@@ -27,7 +27,8 @@ class WeddingsController < ApplicationController
   # GET /weddings/new
   # GET /weddings/new.json
   def new
-    @wedding = current_user.weddings.new 
+    @wedding = current_user.weddings.new
+    
 
     respond_to do |format|
       format.html # new.html.erb
