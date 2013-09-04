@@ -20,13 +20,56 @@
     <%= simple_form_for(@wedding, :url => wizard_path(step, wedding_id: @wedding.id), :method => :put, html: { class: 'form-horizontal'}) do |f| %>
       <%= f.error_notification %>
         <div class="form-inputs">
-    <div><h6> event details</h6>  </div>
+    
+          <h6> PLEASE ENTER YOUR EVENT DETAILS BELOW </h6>  
+          
+          <div class="formrow center">
 
+          <!-- NEED TO AUTO CENTER EVENT DETAIL BOXES WHEN THERE ARE ONLY 1 OR 2 -->
 
+            <div class="eventdetailsbox">
+              <div class="eventdetailstitle">
+                <p class="smallcaps"> FRIDAY <BR> </P> <!-- SET TO AUTOMATIC -->
+                <h7>  SEPTEMBER 21 </h7> <!-- REPLACE WITH WEDDINGDATE <%= @wedding.weddingdate %> current weddingdate isnt saving properly -->
+              </div>
+
+              <%= f.input :day1_event1, placeholder: "NAME OF EVENT (i.e. Sangeet)", label: false %>
+              
+              <BR>
+              <%= link_to "+ ADD EVENT",  class: "pink" %>
+            </div>
+
+            <!-- INSERT IF STATEMENT DEPENDING ON WEDDING_END_DATE -->
+
+            <div class="eventdetailsbox">
+              <div class="eventdetailstitle">
+                <p class="smallcaps"> SATURDAY <BR> </P> <!-- SET TO AUTOMATIC +1 -->
+                <h7>  SEPTEMBER 22 </h7>  <!-- REPLACE WITH WEDDINGDATE +1 -->
+              </div>
+
+              <%= f.input :day2_event1, placeholder: "NAME OF EVENT (i.e. Sangeet)", label: false %>
+              <BR>
+              <%= link_to "+ ADD EVENT" %>
+            </div>
+
+            <!-- INSERT IF STATEMENT DEPENDING ON WEDDING_END_DATE -->
+
+            <div class="eventdetailsbox">
+              <div class="eventdetailstitle">
+                <p class="smallcaps"> SUNDAY <BR> </P> <!-- SET TO AUTOMATIC +2 -->
+                <h7>  SEPTEMBER 23 </h7>  <!-- REPLACE WITH WEDDINGDATE +2 -->
+              </div>
+
+              <%= f.input :day3_event1, placeholder: "NAME OF EVENT (i.e. Sangeet)", label: false %>
+              <BR>
+              <%= link_to "+ ADD EVENT" %>
+            </div>
+
+          </div>
         
-      <div class="form-actions center">
-        <%= f.button :submit, value: "Next" %>
-      </div>
+        <div class="form-actions center">
+          <%= f.button :submit, value: "Next" %>
+        </div>
 
 
 

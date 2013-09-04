@@ -99,7 +99,7 @@ body {
 .landingsection1 {
   width: 100%;
   height: 530px;
-  background: url(../images/garlands.png);
+  background: url(../images/bridesmaids.png);
   display: inline-block;
   position: relative;
   background-repeat:no-repeat;
@@ -127,7 +127,7 @@ body {
 
 
 .invitebox-inner { /* div for invite form within .invitebox */
-  width: 250px;
+  width: 2px;
   margin-right: 75px;
   margin-left: 75px;
 
@@ -211,6 +211,9 @@ body {
   opacity: 0.8;
 }
 
+.pink {
+ color: #eb33a8; 
+}
 
 /******** DIVS *********/
 
@@ -267,9 +270,29 @@ body {
 .formrow {
   width: 100%;
   display: inline-block;
+  
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.eventdetailstitle {
+  width: 80%;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #efefef; /* light grey */
+  margin-bottom: 15px; 
+}
+
+.eventdetailsbox {
+  width: 33%;
+  display: inline-block;
   float: left;
   vertical-align: middle;
   background-color: transparent;
+  margin: 20px 0px 20px 0px; /* top and bottom margins */
 }
 
 .gallery-container {
@@ -448,12 +471,28 @@ h6 {
   -o-transform:scale(1,1.1); /* Opera */
 }
 
+h7 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family:  'Playfair Display SC', serif;
+  font-weight: 100;
+  font-size: 12pt;
+  letter-spacing: 2pt;
+  transform : scale(1,1.1);
+  -webkit-transform:scale(1,1.1); /* Safari and Chrome */
+  -moz-transform:scale(1,1.1); /* Firefox */
+  -ms-transform:scale(1,1.1); /* IE 9+ */
+  -o-transform:scale(1,1.1); /* Opera */
+}
+
 p.smallcaps {
 	font-family: 'Open Sans',sans-serif;
-	font-size: 13px;
+	font-size: 11px;
 	text-align: center;
 	color: #442b29;
 	font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: 2pt;
 }
 
 
@@ -545,6 +584,7 @@ INPUT.btn.btn-primary:hover { /* Hover color for yellow button */
 
 a:hover {
   background: none;
+  color: #eb33a8;
 }
 
 
