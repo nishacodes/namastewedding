@@ -14,6 +14,7 @@ class WeddingStepsController < ApplicationController
 		@wedding = Wedding.find(params[:wedding_id])
 		@wedding.update_attributes(params[:wedding])
 		render_wizard @wedding
+		
 	end
 	
 # private	
