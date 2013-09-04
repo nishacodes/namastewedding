@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130903235621) do
+ActiveRecord::Schema.define(:version => 20130904195510) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -83,6 +83,15 @@ ActiveRecord::Schema.define(:version => 20130903235621) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
+  create_table "vendors", :force => true do |t|
+    t.string   "name"
+    t.string   "vendorcity"
+    t.string   "vendorstate"
+    t.string   "category"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "views", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -119,6 +128,13 @@ ActiveRecord::Schema.define(:version => 20130903235621) do
     t.string   "day3_event1"
     t.string   "day3_event2"
     t.string   "day3_event3"
+    t.string   "venue_d1e1"
+    t.string   "venue_d1e2"
+    t.string   "venue_d2e1"
+    t.string   "venue_d2e2"
+    t.string   "venue_d3e1"
+    t.string   "venue_d3e2"
+    t.string   "venue_d3e3"
   end
 
   add_index "weddings", ["user_id"], :name => "index_weddings_on_user_id"
