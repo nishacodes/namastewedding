@@ -4,3 +4,5 @@
 jQuery ->
 	$('#wedding_weddingdate').datepicker()
 		dateFormat: 'yy-mm-dd'
+
+	

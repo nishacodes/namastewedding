@@ -17,3 +17,6 @@
 //= require masonry.pkgd.min.js
 //= require bootstrap
 //= require_tree .
+
+jQuery ->
+	$('.dropdown-toggle').dropdown()

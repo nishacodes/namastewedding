@@ -2,7 +2,6 @@
 @import 'bootstrap-responsive';
 
 /******** LAYOUTS & SCAFFOLDING *******/ 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -42,7 +41,7 @@ body {
   background-image: none;
   border: none;
   padding-top: 15px;
-  background-color: none;
+  background-color: white;
 }
 
 #navbarwrapper {
@@ -552,16 +551,16 @@ small {
   }
 }
 
-INPUT.btn.btn-primary { /* style of yellow invite button */
+INPUT.btn.btn-primary { /* style of pink button */
 	background-image: none;
-	background-color: #897570;
-	border-color: #897570;
+	background-color: #eb33a8;
+	border-color: #eb33a8;
 	color: white;
 	font-family: 'Josefin Sans', 'Open Sans',sans-serif;
 	font-size: 11pt;
 	font-weight: 400;
 	padding: 8px;
-	text-align: center
+	text-align: center;
 }
 
 
