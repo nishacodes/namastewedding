@@ -1,43 +1,51 @@
   <div class="invitebox">
       <div class="invitebox-inner">
-        <div id="inviteform1">
 
 
-          <!-- SIMPLE FORM ERRORS -->
-
-          <%= simple_form_for(@inviterequest, remote:true, html: { class: 'form-horizontal'}) do |f| %>
-            <% if @inviterequest.errors.any? %>
-              <div id="error_explanation">
-                <h4><%= pluralize(@inviterequest.errors.count, "error") %> prohibited this inviterequest from being saved:</h4>
-
-                <ul>
-                <% @inviterequest.errors.full_messages.each do |msg| %>
-                  <li><%= msg %></li>
-                <% end %>
-                </ul>
-              </div>
-            <% end %>
+         
 
 <!-- INVITE BOX CONTENT -->
 
-
-           <br> <br> <br> <h5> INDIAN WEDDING <BR> PLANNING JUST GOT EASIER </h5>  
-        
-            <%= image_tag("smalldivider.png") %>
-
-            <h5> REQUEST AN INVITE </h5>  
-
-        
-            <div class="field">
-              <!-- <%= f.input :name, :placeholder => 'Your name, please', label: false  %> -->
-             
-              <%= f.input :email, :placeholder => 'enter your email, please', label: false %>
+            <button type="button" class="btn btn-white center" id="requestbutton" data-toggle="collapse" data-target="#inviteform1">
+              REQUEST AN INVITE
+            </button>
+            <div id="inviteform1" class="collapse in">
               
-            </div>
-      
-            <div class="actions">
-              <%= f.submit "SUBMIT", class: "btn btn-primary btn-special", remote: true %>
-            </div>
+                <br> <br>
+
+                 <!-- SIMPLE FORM ERRORS -->
+
+                  <%= simple_form_for(@inviterequest, remote:true, html: { class: 'form-horizontal'}) do |f| %>
+                    <% if @inviterequest.errors.any? %>
+                      <div id="error_explanation">
+                        <h4><%= pluralize(@inviterequest.errors.count, "error") %> prohibited this inviterequest from being saved:</h4>
+
+                        <ul>
+                        <% @inviterequest.errors.full_messages.each do |msg| %>
+                          <li><%= msg %></li>
+                        <% end %>
+                        </ul>
+                      </div>
+                    <% end %>
+
+
+
+                      <div class="field">
+                        <!-- <%= f.input :name, :placeholder => 'Your name, please', label: false  %> -->
+                   
+                        <%= f.input :email, :placeholder => 'enter your email, please', label: false %>
+                    
+                      </div>
+            
+                      <div class="actions">
+                        <%= f.submit "SUBMIT", class: "btn btn-primary btn-special", remote: true %>
+                      </div>
+
+                    
+                  </div>
+                 
+                 
+            
 
               <% end %>
           </div>
